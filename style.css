@@ -1,5 +1,6 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   font-weight: 400;
   --main-colors: #fbf7ea;
@@ -70,16 +71,14 @@ footer svg {
   margin: 0 10px;
 }
 
-/************* MAIN *************/
-
 main,
 aside {
-  width: 60%;
+  width: 50%;
   height: 100%;
   padding: 2rem 1rem 2rem 7rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
 }
 
 aside {
@@ -87,12 +86,69 @@ aside {
   padding: 2rem 7rem 2rem 1rem;
 }
 
+/************* MAIN *************/
+
+.main__title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--main-colors);
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+}
+
+.main__input {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--second-color);
+  background-color: var(--main-colors);
+  outline: 0;
+}
+
+.main__container_btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 0 0;
+}
+
+.main__btn {
+  width: 45%;
+  height: 4rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--second-color);
+  background-color: var(--third-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+}
+
+.main__btn:nth-child(2) {
+  background-color: var(--fourth-color);
+}
+
+.main__btn:hover {
+  transform: scale(1.05);
+}
+
+/************* Arrow *************/
 .container-arrow {
+  width: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
 }
+
+/************* ASIDE *************/
 
 .aside__container {
   background-color: var(--main-colors);
@@ -109,4 +165,85 @@ aside {
   display: flex;
   text-align: center;
   align-items: center;
+}
+
+/************* FOOTER *************/
+
+.footer__container {
+  margin-top: 1rem;
+  color: var(--main-colors);
+}
+
+.footer__container p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+/************* MEDIA QUERIES *************/
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding-left: 2rem;
+  }
+
+  aside {
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container-arrow {
+    display: none;
+  }
+
+  main,
+  aside {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  main,
+  aside {
+    width: 100%;
+    padding: 1rem;
+    justify-content: start;
+  }
+
+  body {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 45%;
+    grid-template-areas: 'main' 'aside';
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  .main__container {
+    height: 100%;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  .footer__container {
+    position: absolute;
+    bottom: 0;
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .aside__text {
+    font-size: 1.6rem;
+  }
+
+  .footer__container p {
+    font-size: 0.9rem;
+  }
 }
