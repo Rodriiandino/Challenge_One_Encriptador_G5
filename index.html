@@ -16,12 +16,12 @@
         <textarea
           class="main__input"
           name="text"
-          id="text"
+          id="input-text"
           placeholder="Ingresé el texto..."
         ></textarea>
         <div class="main__container_btn">
-          <button class="main__btn">Encriptar</button>
-          <button class="main__btn">Desencriptar</button>
+          <button id="btn-encrypt" class="main__btn">Encriptar</button>
+          <button id="btn-decrypt" class="main__btn">Desencriptar</button>
         </div>
       </section>
       <footer class="footer__container">
@@ -84,6 +84,7 @@
     </div>
     <aside>
       <section class="aside__container">
+        <p id="output-text" class="aside__output hidden"></p>
         <p class="aside__text">
           CUANDO ELIGAS UN TEXTO QUE DESEA ENCRIPTAR SE MOSTRARA AQUI...
         </p>

@@ -167,6 +167,21 @@ aside {
   align-items: center;
 }
 
+.aside__output {
+  height: 100%;
+  color: var(--fourth-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 2rem;
+  margin: 0;
+  overflow-wrap: break-word;
+  overflow-y: auto;
+}
+
+.hidden {
+  display: none;
+}
+
 /************* FOOTER *************/
 
 .footer__container {
