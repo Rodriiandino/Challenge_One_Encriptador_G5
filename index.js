@@ -69,7 +69,12 @@ const copy = () => {
 
   // Deselecciona el input
   inputText.setSelectionRange(0, 0)
+
+  // Muestra el texto copiado
+  const text = outputText.innerHTML
+  inputText.value = text
 }
+
 // Eventos
 btnEncrypt.addEventListener('click', () => {
   outputEncrypt()
