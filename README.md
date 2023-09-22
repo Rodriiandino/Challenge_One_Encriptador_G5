@@ -6,11 +6,15 @@ Este es un proyecto desarrollado como parte de un challenge ofrecido por One, en
 
 El encriptador de texto toma un mensaje de entrada y lo encripta utilizando un algoritmo de encriptación personalizado.
 
+![618shots_so](https://github.com/Rodriiandino/Challenge_One_Encriptador_G5/assets/106351323/119d97d0-5a8a-4ec0-99c3-88ee84b27c38)
+
 ### Características del Proyecto
 
 -   Encriptación de texto: El proyecto ofrece una interfaz web para ingresar un mensaje de texto y encriptarlo utilizando un algoritmo personalizado.
 -   Seguridad: El algoritmo de encriptación utilizado es seguro y garantiza la protección de la información sensible.
 -   Interfaz de Usuario Intuitiva: La interfaz de usuario del proyecto es fácil de usar y permite a los usuarios interactuar con el encriptador de texto de manera intuitiva.
+
+![885shots_so](https://github.com/Rodriiandino/Challenge_One_Encriptador_G5/assets/106351323/503d77ec-c931-41a6-8d48-dceda7f6d553)
 
 ### Tecnologías Utilizadas
 
